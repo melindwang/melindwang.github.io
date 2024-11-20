@@ -1,9 +1,154 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
+layout: page
+title: ""
+permalink: /
 ---
+
+
+![Headshot](/assets/images/picture.png)
+
+
+Melinda Wang
+
+
+I am a senior research assistant at the Federal Reserve Board of Governors, and graduated with a bachelors in Economics and Mathematics from the University of Southern California.
+
+
+My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are urban economics, real estate, and public finance.
+
+
+You can reach me at [melindwang@gmail.com](mailto:melindwang@gmail.com)
+
+
+<h3>Available Work</h3>
+<div class="publications">
+ <div class="pub-entry">
+   <div class="pub-title">
+     The Impact of Expanding Universities to Local Real Estate
+   </div>
+   <div class="pub-authors">
+     Advised by Richard Green
+   </div>
+   <div class="pub-details">
+     Senior Thesis, May 2023
+   </div>
+   <div class="pub-links">
+     [<a href="https://www.google.com">Paper</a>]
+   </div>
+ </div>
+
+
+ <div class="pub-entry">
+   <div class="pub-title">
+     Rural Revitalization: Evidence for Place Based Policies in Rural Areas
+   </div>
+   <div class="pub-details">
+     October 2024, NSF Proposal
+   </div>
+   <div class="pub-links">
+     [<a href="https://docs.google.com/document/d/1N3-bw6H4bHsTFJrDc69ryS-QB58J14ma6nE7PHUI42U/edit?usp=sharing">Paper</a>]
+   </div>
+ </div>
+ <div class="pub-entry">
+   <div class="pub-title">
+     A microdroplet-accelerated Biginelli reaction: mechanisms and separation of isomers using IMS-MS
+   </div>
+   <div class="pub-authors">
+     with Navneet Sahota, Deyaa I. AbuSalim, Christopher J. Brown, Zhicaho Zhang,  Tarick J. El-Baba, Silas P. Cook and David E. Clemmer
+   </div>
+   <div class="pub-details">
+     May 2019 (in High School)
+   </div>
+   <div class="pub-links">
+     [<a href="https://pubmed.ncbi.nlm.nih.gov/31160956/">Paper</a>]
+   </div>
+ </div>
+</div>
+
+
+
+
+<h3>Works in Progress</h3>
+<div class="publications">
+ <div class="pub-entry">
+   <div class="pub-title">
+     The Impact of Big Banks to Residential Mortgage Lending
+   </div>
+   <div class="pub-authors">
+     With Ben Ranish, Gazi Kara, Michael Suher, and Ricardo Duque Gabriel
+   </div>
+   <div class="pub-details">
+     (pending publication approval)
+   </div>
+ </div>
+
+
+ <div class="pub-entry">
+   <div class="pub-title">
+     Lending Decline to Low and Moderate Income Mortgage Borrowers
+   </div>
+   <div class="pub-authors">
+     With Michael Suher, Gazi Kara, and Ricardo Duque Gabriel
+   </div>
+ </div>
+ <div class="pub-entry">
+   <div class="pub-title">
+     Fintech and Shadow Bank Lending in the Mortgage Market and Monetary Policy
+Transmission
+   </div>
+   <div class="pub-authors">
+     Research assistance for Gazi Kara and Gene Kang.
+   </div>
+ </div>
+</div>
+
+
+<h3>Other Research Assistance</h3>
+<div class="research-experience">
+ <div class="experience-entry">
+   <div class="institution">
+     USC Lusk Center for Real Estate
+   </div>
+   <div class="location-date">
+     Los Angeles, CA (2023)
+   </div>
+   <div class="supervisor">
+     Prof. Richard Green & Prof Susan Wachter
+   </div>
+ </div>
+
+
+ <div class="experience-entry">
+   <div class="institution">
+     USC Marshall School of Business
+   </div>
+   <div class="location-date">
+     Los Angeles, CA (2021)
+   </div>
+   <div class="supervisor">
+     Prof. Rodney Ramcharan
+   </div>
+ </div>
+
+
+ <div class="experience-entry">
+   <div class="institution">
+     Indiana University Department of Sociology
+   </div>
+   <div class="location-date">
+     Bloomington, IN (2019)
+   </div>
+   <div class="supervisor">
+     Prof. Dina Okamoto
+   </div>
+ </div>
+</div>
+
+
+Awards
+- Summa Cum Laude, University of Southern California
+- Junior Phi Beta Kappa, University of Southern California
+- 1 of 3 students to receive High Honors in Economics Senior Thesis
+- Easterlin Fellow, University of Southern California Department of Economics
+- Economics Honors Society, President
+
