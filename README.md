@@ -15,6 +15,11 @@ source ~/.zshrc
 
 -- minima theme instructions
 
+To Do List
+1. add cv
+2. add links to professors
+3. fix about
+4. favicon? 
 
 
 <div align="center">
