@@ -103,7 +103,7 @@ Transmission
 </div>
 
 
-<h3>Other Research Assistance</h3>
+<h3>Experience</h3>
 <div class="research-experience">
  <div class="experience-entry">
    <div class="institution">
@@ -145,10 +145,17 @@ Transmission
 </div>
 
 
-Awards
-- Summa Cum Laude, University of Southern California
-- Junior Phi Beta Kappa, University of Southern California
-- 1 of 3 students to receive High Honors in Economics Senior Thesis
-- Easterlin Fellow, University of Southern California Department of Economics
-- Economics Honors Society, President
+<div class="education-section">
+ <h2>University of Southern California</h2>
+ <div class="degree">Bachelor of Arts - BA, Economics-Mathematics</div>
+ <div class="years">2019 - 2023</div>
+  <div class="honors">
+   <div>Summa Cum Laude</div>
+   <div>1 of 3 students to receive High Honors in Economics Senior Thesis</div>
+   <div>Junior Phi Beta Kappa</div>
+   <div>Easterlin Fellow, Department of Economics</div>
+   <div>Economics Honors Society, President</div>
+ </div>
+</div>
+
 
