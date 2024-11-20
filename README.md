@@ -1,3 +1,20 @@
+Instructions for self:
+
+# Using rbenv
+brew install rbenv
+rbenv install 3.1.0
+rbenv global 3.1.0
+
+then set up rbenv so you do not use macOS's ruby
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+
+1. gem install bundler
+2. bundle install
+3. bundle exec jekyll serve
+
+-- minima theme instructions
+
 <div align="center">
   <p><em><strong>Disclaimer:</strong> The information here may vary depending on the version you're using.<br/>
   Please refer to the <code>README.md</code> bundled within the theme-gem for information specific to your version or by pointing
