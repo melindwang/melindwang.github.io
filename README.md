@@ -16,11 +16,11 @@ source ~/.zshrc
 -- minima theme instructions
 
 To Do: 
-- Add CV
-- Add links to professors
-- Add miscellaneous to about page
-- Link senior thesis
-- fix favicon? 
+1. Add CV
+2. Add links to professors
+3. Add miscellaneous to about page
+4. Link senior thesis
+5. fix favicon? 
 
 
 
