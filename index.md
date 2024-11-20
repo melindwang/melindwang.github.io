@@ -17,7 +17,12 @@ I am a senior research assistant at the Federal Reserve Board of Governors, and 
 My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are urban economics, real estate, and public finance.
 
 
-You can reach me at [melindwang@gmail.com](mailto:melindwang@gmail.com)
+<span id="email"></span>
+<script>
+   const p = ['com', 'gmail', 'melindwang'].reverse();
+   const e = document.getElementById('email');
+   e.innerHTML = `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>`;
+</script>
 
 
 <h3>Available Work</h3>
