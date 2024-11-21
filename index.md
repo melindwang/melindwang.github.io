@@ -11,7 +11,7 @@ permalink: /
 Melinda Wang
 
 
-I am a senior research assistant at the Federal Reserve Board of Governors, and graduated with a bachelors in Economics and Mathematics from the University of Southern California.
+I am a senior research assistant at the Federal Reserve Board of Governors, and graduated with a degree in Economics and Mathematics and Phi Beta Kappa from the University of Southern California.
 
 
 My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are urban economics, real estate, and public finance.
@@ -32,7 +32,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      The Impact of Expanding Universities to Local Real Estate
    </div>
    <div class="pub-authors">
-     Advised by Richard Green
+     Advised by Professor Richard K. Green
    </div>
    <div class="pub-details">
      Senior Thesis, May 2023
@@ -59,10 +59,10 @@ My research is centered on (i). how to house low-income households, (ii). how po
      A microdroplet-accelerated Biginelli reaction: mechanisms and separation of isomers using IMS-MS
    </div>
    <div class="pub-authors">
-     with Navneet Sahota, Deyaa I. AbuSalim, Christopher J. Brown, Zhicaho Zhang,  Tarick J. El-Baba, Silas P. Cook and David E. Clemmer
+     with Navneet Sahota, Deyaa I. AbuSalim, Christopher J. Brown, Zhicaho Zhang,  Tarick J. El-Baba, Silas P. Cook and David E. Clemmer.
    </div>
    <div class="pub-details">
-     May 2019 (in High School)
+     May 2019
    </div>
    <div class="pub-links">
      [<a href="https://pubmed.ncbi.nlm.nih.gov/31160956/">Paper</a>]
@@ -80,7 +80,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      The Impact of Big Banks to Residential Mortgage Lending
    </div>
    <div class="pub-authors">
-     With Ben Ranish, Gazi Kara, Michael Suher, and Ricardo Duque Gabriel
+     With Ben Ranish, Gazi Kara, Michael Suher, and Ricardo Duque Gabriel.
    </div>
    <div class="pub-details">
      (pending publication approval)
@@ -93,7 +93,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      Lending Decline to Low and Moderate Income Mortgage Borrowers
    </div>
    <div class="pub-authors">
-     With Michael Suher, Gazi Kara, and Ricardo Duque Gabriel
+     With Michael Suher, Gazi Kara, and Ricardo Duque Gabriel.
    </div>
  </div>
  <div class="pub-entry">
@@ -118,7 +118,7 @@ Transmission
      Los Angeles, CA (2023)
    </div>
    <div class="supervisor">
-     Prof. Richard Green & Prof Susan Wachter
+     Professor Richard Green & Professor Susan Wachter
    </div>
  </div>
 
@@ -131,7 +131,7 @@ Transmission
      Los Angeles, CA (2021)
    </div>
    <div class="supervisor">
-     Prof. Rodney Ramcharan
+     Professor Rodney Ramcharan
    </div>
  </div>
 
@@ -144,7 +144,7 @@ Transmission
      Bloomington, IN (2019)
    </div>
    <div class="supervisor">
-     Prof. Dina Okamoto
+     Professor Dina Okamoto
    </div>
  </div>
 </div>
@@ -152,12 +152,11 @@ Transmission
 
 <div class="education-section">
  <h2>University of Southern California</h2>
- <div class="degree">Bachelor of Arts - BA, Economics-Mathematics</div>
- <div class="years">2019 - 2023</div>
+ <div class="degree">Bachelor of Science - Economics & Mathematics</div>
+ <div class="years">2020 - 2023</div>
   <div class="honors">
-   <div>Summa Cum Laude</div>
-   <div>1 of 3 students to receive High Honors in Economics Senior Thesis</div>
-   <div>Junior Phi Beta Kappa</div>
+   <div>1 of 5 students to receive Departmental and University Honors in Economics </div>
+   <div>Junior-elect Phi Beta Kappa</div>
    <div>Easterlin Fellow, Department of Economics</div>
    <div>Economics Honors Society, President</div>
  </div>
