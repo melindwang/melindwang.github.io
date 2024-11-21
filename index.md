@@ -5,7 +5,7 @@ permalink: /
 ---
 
 
-![Headshot](/assets/images/picture.png)
+![Headshot](/assets/images/picture1.png)
 
 
 Melinda Wang

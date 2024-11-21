@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-![Headshot](/assets/images/picture.png)
+![Headshot](/assets/images/picture1.png)
 
 
 I am a Senior Research Assistant at the Federal Reserve Board of Governors. I graduated from the University of Southern California with a bachelors in Economics & Mathematics.
