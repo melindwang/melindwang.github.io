@@ -55,7 +55,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
  </div>
  <div class="pub-entry">
    <div class="pub-title">
-     A microdroplet-accelerated Biginelli reaction: mechanisms and separation of isomers using IMS-MS
+     A microdroplet-accelerated Biginelli reaction: mechanisms and separation of isomers using IMS-MS, Chem. Sci., 2019,10, 4822-4827
    </div>
    <div class="pub-authors">
      with Navneet Sahota, Deyaa I. AbuSalim, Christopher J. Brown, Zhicaho Zhang,  Tarick J. El-Baba, Silas P. Cook and David E. Clemmer.
