@@ -7,7 +7,7 @@ permalink: /
 
 ![Headshot](/assets/images/picture3.png)
 
-Melinda L. Wang
+Melinda Wang
 
 
 I am a senior research assistant at the Federal Reserve Board of Governors, and graduated Phi Beta Kappa from the University of Southern California with a degree in Economics and Mathematics.
@@ -37,7 +37,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      Senior Thesis, May 2023
    </div>
    <div class="pub-links">
-     [<a href="https://www.google.com">Paper</a>]
+     [<a href="/assets/seniorthesis.pdf">Paper</a>]
    </div>
  </div>
 
@@ -50,7 +50,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      October 2024, NSF Proposal
    </div>
    <div class="pub-links">
-     [<a href="https://docs.google.com/document/d/1N3-bw6H4bHsTFJrDc69ryS-QB58J14ma6nE7PHUI42U/edit?usp=sharing">Paper</a>]
+     [<a href="/assets/melindawangnsf.pdf">Paper</a>]
    </div>
  </div>
  <div class="pub-entry">
