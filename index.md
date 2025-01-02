@@ -37,7 +37,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      Senior Thesis, May 2023
    </div>
    <div class="pub-links">
-     [<a href="/assets/seniorthesis.pdf">Paper</a>]
+     [<a href="/assets/MelindaWangSeniorThesis.pdf">Paper</a>]
    </div>
  </div>
 
@@ -50,7 +50,7 @@ My research is centered on (i). how to house low-income households, (ii). how po
      October 2024, NSF Proposal
    </div>
    <div class="pub-links">
-     [<a href="/assets/melindawangnsf.pdf">Paper</a>]
+     [<a href="/assets/MelindaWangNSF.pdf">Paper</a>]
    </div>
  </div>
  <div class="pub-entry">
