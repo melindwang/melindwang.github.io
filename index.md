@@ -13,8 +13,7 @@ Melinda Wang
 I am a senior research assistant at the Federal Reserve Board of Governors, and graduated Phi Beta Kappa from the University of Southern California with a degree in Economics and Mathematics.
 
 
-My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are urban economics, real estate, and public finance.
-
+My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are in spatial and urban economics.
 
 My <a href="/assets/MelindaWangCV.pdf">CV</a>
 
@@ -25,7 +24,9 @@ My <a href="/assets/MelindaWangCV.pdf">CV</a>
    e.innerHTML = `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>`;
 </script>
 
-
+<!---
+your comment goes here
+and here
 <h3>Available Work</h3>
 <div class="publications">
  <div class="pub-entry">
@@ -164,3 +165,4 @@ Transmission
 </div>
 
 
+-->
