@@ -11,9 +11,9 @@ permalink: /about/
 I am a Senior Research Assistant at the Federal Reserve Board of Governors. I am interested in spatial and urban economics. 
 
 I grew up in southern Indiana, then graduated with high honors from the University of Southern California with a bachelors in Economics & Mathematics.
-<!--
-My <a href="/assets/MelindaWangCV.pdf">CV</a>
--->
+
+<!-- My <a href="/assets/MelindaWangCV.pdf">CV</a> -->
+
 <span id="email"></span>
 <script>
    const p = ['com', 'gmail', 'melindwang'].reverse();
