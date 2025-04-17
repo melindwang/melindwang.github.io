@@ -14,7 +14,7 @@ I am a senior research assistant at the Federal Reserve Board of Governors, and 
 
 
 My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are in spatial and urban economics.
-
+<!---
 My <a href="/assets/MelindaWangCV.pdf">CV</a>
 
 <span id="email"></span>
@@ -23,8 +23,10 @@ My <a href="/assets/MelindaWangCV.pdf">CV</a>
    const e = document.getElementById('email');
    e.innerHTML = `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>`;
 </script>
+-->
 
 <!---
+
 your comment goes here
 and here
 <h3>Available Work</h3>
