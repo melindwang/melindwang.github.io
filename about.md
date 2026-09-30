@@ -1,27 +1,16 @@
 ---
-layout: page
-title: About
+layout: null
 permalink: /about/
+sitemap: false
 ---
-
-
-![Headshot](/assets/images/headshot.jpg){: width="200"}
-
-
-My name is Mel. I like to think about emergence, dynamical systems theory, and economic policy for AI.
-
-I write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.
-
-<!-- My <a href="/assets/MelindaWangCV.pdf">CV</a> -->
-
-<span id="email"></span>
-<script>
-   const p = ['com', 'gmail', 'melindwang'].reverse();
-   const e = document.getElementById('email');
-   e.innerHTML = `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>`;
-</script>
-
-<!-- This is a commented out section -->
-<!-- 
-My current research interests include access to mortgage credit and place based policy effectiveness. My fields of study are public finance and urban economics.
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
+  <meta name="robots" content="noindex">
+</head>
+<body><a href="{{ '/' | relative_url }}">Continue to the homepage</a></body>
+</html>

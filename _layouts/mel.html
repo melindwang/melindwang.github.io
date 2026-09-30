@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/mel.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+</head>
+<body>
+  <header class="site-head">
+    <a class="name" href="{{ '/' | relative_url }}">Melinda Wang</a>
+    <nav class="tabs">
+      {%- for tab in site.tabs -%}
+        {%- if tab.external -%}
+          <a href="{{ tab.url }}" target="_blank" rel="noopener">{{ tab.title }}</a>
+        {%- else -%}
+          {%- assign tab_url = tab.url | relative_url -%}
+          <a href="{{ tab_url }}"{% if page.url == tab.url %} class="active" aria-current="page"{% endif %}>{{ tab.title }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+  </header>
+
+  <main class="{{ page.body_class }}">
+    {{ content }}
+  </main>
+
+  <footer class="site-foot">
+    {%- for entry in site.minima.social_links -%}
+      <a href="{{ entry.user_url }}" target="_blank" rel="me noopener">{{ entry.title | default: entry.platform }}</a>
+    {%- endfor -%}
+  </footer>
+</body>
+</html>

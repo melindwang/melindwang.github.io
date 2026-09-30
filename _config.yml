@@ -32,6 +32,12 @@ plugins:
 header_pages:
   - about.md
 
+# Tabs in the top-right of the "mel" layout, in order.
+tabs:
+  - { title: About,   url: / }
+  - { title: Papers,  url: /papers/ }
+  - { title: Writing, url: "https://melindwang.substack.com/", external: true }
+
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
 
@@ -58,12 +64,12 @@ minima:
   #  - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-    - { platform: github,         user_url: "https://github.com/melindwang" }
+    - { platform: github,         user_url: "https://github.com/melindwang", title: "GitHub" }
   #  - { platform: gitlab,         user_url: "https://gitlab.com/jekyll" }
   #  - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
   #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
   #  - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/melindwang" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/melindwang", title: "LinkedIn" }
     - { platform: substack,       user_url: "https://melindwang.substack.com/", title: "Substack" }
   #  - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
   #  - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
@@ -81,3 +87,21 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+
+# Template leftovers from the Minima theme that shouldn't be published.
+# (Listing exclude replaces Jekyll's defaults, so the defaults are repeated here.)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - History.markdown
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - LICENSE.txt
+  - minima.gemspec
+  - screenshot.png
+  - readme_banner.svg
+  - script

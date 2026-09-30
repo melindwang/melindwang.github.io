@@ -1,34 +1,35 @@
 ---
-layout: page
-title: ""
+layout: mel
+title: About
 permalink: /
+body_class: about
 ---
 
+<figure class="photo">
+  <img src="/assets/images/headshot.jpg" alt="Melinda Wang" width="797" height="797">
+</figure>
 
-![Headshot](/assets/images/headshot.jpg){: width="200"}
+<div class="about-text" markdown="1">
 
-Melinda Wang
+Hi, I'm Mel.
 
+I like to think about emergence, dynamical systems theory, and economic policy for AI. I'm originally from Indiana — now based in New York City.
 
-My name is Mel. I like to think about emergence, dynamical systems theory, and economic policy for AI.
-
-I write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.
-
-<!-- My <a href="/assets/MelindaWangCV.pdf">CV</a> -->
+I write on [Substack](https://melindwang.substack.com/){: target="_blank" rel="noopener"}.
 
 <span id="email"></span>
 <script>
-   const p = ['com', 'gmail', 'melindwang'].reverse();
-   const e = document.getElementById('email');
-   e.innerHTML = `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>`;
+  const p = ['com', 'gmail', 'melindwang'].reverse();
+  document.getElementById('email').innerHTML =
+    `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>.`;
 </script>
 
-<h3>Papers</h3>
-{% include papers.html %}
+</div>
 
+{% comment %}
+Older homepage material, kept here for reference but not published.
+Liquid comments are stripped at build time, so none of this reaches the live page source.
 
-
-<!---
 
 your comment goes here
 and here
@@ -170,4 +171,5 @@ Transmission
 </div>
 
 
--->
+
+{% endcomment %}

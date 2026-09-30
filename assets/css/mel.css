@@ -1,0 +1,140 @@
+/* Site styles for the "mel" layout: quiet serif type, italic name top-left, tabs top-right. */
+
+:root {
+  --bg: #fafafa;
+  --ink: #111;
+  --muted: #6b6b6b;
+  --rule: #e4e4e4;
+  --serif: "Crimson Pro", "Minion Pro", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+/* Header */
+.site-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 40px 0;
+}
+
+.name {
+  font-style: italic;
+  font-size: 30px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.tabs { display: flex; gap: 22px; }
+
+.tabs a {
+  font-size: 18px;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.tabs a:hover,
+.tabs a.active { border-bottom-color: var(--ink); }
+
+/* Page body */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 40px 60px;
+}
+
+/* About (home) */
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.photo {
+  justify-self: center;
+  background: #fff;
+  padding: 12px 12px 34px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 6px 18px rgba(0, 0, 0, 0.06);
+  transform: rotate(-1.5deg);
+  max-width: 360px;
+  width: 100%;
+}
+
+.photo img { display: block; width: 100%; height: auto; }
+
+.about-text { max-width: 440px; }
+.about-text p { margin: 0 0 1em; }
+.about-text a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* Papers */
+.page-title {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  margin: 0 0 32px;
+}
+
+.papers { max-width: 700px; }
+
+.publications { margin: 0; }
+
+.pub-entry {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.pub-entry:first-child { border-top: 1px solid var(--rule); }
+
+.pub-title { font-size: 21px; line-height: 1.4; }
+.pub-title a { text-decoration: none; }
+.pub-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.pub-authors,
+.pub-details { color: var(--muted); font-style: italic; }
+
+.pub-links { font-size: 16px; color: var(--muted); }
+
+/* Footer */
+.site-foot {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px 40px;
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.site-foot a { text-decoration: none; }
+.site-foot a:hover { color: var(--ink); }
+
+/* Phones */
+@media (max-width: 720px) {
+  .site-head { padding: 24px 16px 0; }
+  .name { font-size: 26px; }
+  main { padding: 48px 16px 40px; }
+  .about { grid-template-columns: 1fr; gap: 36px; }
+  .photo { max-width: 280px; }
+  .site-foot { padding: 20px 16px 32px; }
+}
