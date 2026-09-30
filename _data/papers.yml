@@ -1,0 +1,12 @@
+# Papers listed on the homepage, in display order.
+# To add a paper: copy an entry, set ssrn_id (the number after abstract_id= in the SSRN URL),
+# and fill in the title. authors and date are optional.
+- title: "Dynamics and Equilibrium Transitions in Economic Systems"
+  ssrn_id: 6532978
+  authors: ""
+  date: ""
+
+- title: "A Coupled Framework for Macroeconomic Dynamics: Application to Adaptive Learning"
+  ssrn_id: 7175898
+  authors: ""
+  date: ""

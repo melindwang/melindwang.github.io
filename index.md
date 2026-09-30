@@ -5,15 +5,14 @@ permalink: /
 ---
 
 
-![Headshot](/assets/images/picture3.png)
+![Headshot](/assets/images/headshot.jpg){: width="200"}
 
 Melinda Wang
 
 
-I am a senior research assistant at the Federal Reserve Board of Governors, and graduated Phi Beta Kappa from the University of Southern California with a degree in Economics and Mathematics.
+My name is Mel. I like to think about emergence, dynamical systems theory, and economic policy for AI.
 
-
-My research is centered on (i). how to house low-income households, (ii). how policies might enable low-income economic mobility, and (iii). mortgage markets. My fields of study are in spatial and urban economics.
+I write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.
 
 <!-- My <a href="/assets/MelindaWangCV.pdf">CV</a> -->
 
@@ -23,6 +22,10 @@ My research is centered on (i). how to house low-income households, (ii). how po
    const e = document.getElementById('email');
    e.innerHTML = `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>`;
 </script>
+
+<h3>Papers</h3>
+{% include papers.html %}
+
 
 
 <!---

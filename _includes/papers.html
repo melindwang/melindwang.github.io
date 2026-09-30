@@ -1,0 +1,20 @@
+{%- comment -%}
+  Renders the list in _data/papers.yml. Each title links to the paper's SSRN page.
+{%- endcomment -%}
+<div class="publications">
+{%- for paper in site.data.papers -%}
+  {%- capture ssrn_url -%}https://papers.ssrn.com/sol3/papers.cfm?abstract_id={{ paper.ssrn_id }}{%- endcapture -%}
+  <div class="pub-entry">
+    <div class="pub-title">
+      <a href="{{ ssrn_url }}" target="_blank" rel="noopener">{% if paper.title and paper.title != "" %}{{ paper.title }}{% else %}SSRN Working Paper {{ paper.ssrn_id }}{% endif %}</a>
+    </div>
+    {%- if paper.authors and paper.authors != "" %}
+    <div class="pub-authors">{{ paper.authors }}</div>
+    {%- endif %}
+    {%- if paper.date and paper.date != "" %}
+    <div class="pub-details">{{ paper.date }}</div>
+    {%- endif %}
+    <div class="pub-links">[<a href="{{ ssrn_url }}" target="_blank" rel="noopener">SSRN</a>]</div>
+  </div>
+{%- endfor -%}
+</div>

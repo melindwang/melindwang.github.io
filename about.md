@@ -5,12 +5,12 @@ permalink: /about/
 ---
 
 
-![Headshot](/assets/images/picture3.png)
+![Headshot](/assets/images/headshot.jpg){: width="200"}
 
 
-I am a Senior Research Assistant at the Federal Reserve Board of Governors. I am interested in spatial and urban economics. 
+My name is Mel. I like to think about emergence, dynamical systems theory, and economic policy for AI.
 
-I grew up in southern Indiana, then graduated with high honors from the University of Southern California with a bachelors in Economics & Mathematics.
+I write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.
 
 <!-- My <a href="/assets/MelindaWangCV.pdf">CV</a> -->
 
