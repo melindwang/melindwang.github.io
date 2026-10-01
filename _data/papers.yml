@@ -3,11 +3,13 @@
 # and fill in the title.
 # To add a paper hosted on this site: put the PDF in assets/papers/ and set pdf to its path instead.
 # note, authors and date are optional.
-- title: "Learning under Endogenous Feedback: Finite-Response Gradients and Joint Stability"
-  pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
-  note: "(Working Paper Draft)"
-  authors: ""
-  date: ""
+# Unlisted while the next draft is in progress. The PDF stays at its address so existing links
+# (resume, CV) keep working. To list it again, remove the leading "# " from the five lines below.
+# - title: "Learning under Endogenous Feedback: Finite-Response Gradients and Joint Stability"
+#   pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
+#   note: "(Working Paper Draft)"
+#   authors: ""
+#   date: ""
 
 - title: "A Coupled Framework for Macroeconomic Dynamics: Application to Adaptive Learning"
   ssrn_id: 7175898

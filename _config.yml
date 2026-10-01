@@ -86,11 +86,6 @@ defaults:
       path: "assets"
     values:
       sitemap: false
-  # ...except posted papers, which search engines should find.
-  - scope:
-      path: "assets/papers"
-    values:
-      sitemap: true
 
 # Template leftovers from the Minima theme that shouldn't be published.
 # (Listing exclude replaces Jekyll's defaults, so the defaults are repeated here.)

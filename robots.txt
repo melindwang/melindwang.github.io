@@ -3,5 +3,7 @@ layout: null
 ---
 User-agent: *
 Allow: /
+# Draft papers: reachable by direct link, but not crawled or listed in search.
+Disallow: /assets/papers/
 
 Sitemap: {{ "/sitemap.xml" | absolute_url }}
