@@ -3,8 +3,10 @@
 # and fill in the title.
 # To add a paper hosted on this site: put the PDF in assets/papers/ and set pdf to its path instead.
 # note, authors and date are optional.
-# Unlisted while the next draft is in progress. The PDF stays at its address so existing links
-# (resume, CV) keep working. To list it again, remove the leading "# " from the five lines below.
+# Taken down while the next draft is in progress. The resume and CV link to
+#   https://melindwang.github.io/assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
+# To make it live again: save the new draft at assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
+# (exactly that name), then remove the leading "# " from the five lines below to list it on the Papers page.
 # - title: "Learning under Endogenous Feedback: Finite-Response Gradients and Joint Stability"
 #   pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
 #   note: "(Working Paper Draft)"
