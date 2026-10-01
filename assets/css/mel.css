@@ -138,3 +138,5 @@ main {
   .photo { max-width: 280px; }
   .site-foot { padding: 20px 16px 32px; }
 }
+
+.pub-note { color: var(--muted); font-style: italic; font-size: 18px; white-space: nowrap; }

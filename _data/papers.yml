@@ -1,12 +1,20 @@
-# Papers listed on the homepage, in display order.
-# To add a paper: copy an entry, set ssrn_id (the number after abstract_id= in the SSRN URL),
-# and fill in the title. authors and date are optional.
-- title: "Dynamics and Equilibrium Transitions in Economic Systems"
-  ssrn_id: 6532978
+# Papers listed on the Papers page, in display order.
+# To add an SSRN paper: copy an entry, set ssrn_id (the number after abstract_id= in the SSRN URL),
+# and fill in the title.
+# To add a paper hosted on this site: put the PDF in assets/papers/ and set pdf to its path instead.
+# note, authors and date are optional.
+- title: "Learning under Endogenous Feedback: Finite-Response Gradients and Joint Stability"
+  pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
+  note: "(Working Paper Draft)"
   authors: ""
   date: ""
 
 - title: "A Coupled Framework for Macroeconomic Dynamics: Application to Adaptive Learning"
   ssrn_id: 7175898
+  authors: ""
+  date: ""
+
+- title: "Dynamics and Equilibrium Transitions in Economic Systems"
+  ssrn_id: 6532978
   authors: ""
   date: ""

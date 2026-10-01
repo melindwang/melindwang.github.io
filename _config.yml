@@ -1,7 +1,6 @@
 title: Melinda Wang
 author:
   name: Melinda Wang
-  email: melindwang@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -87,6 +86,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  # ...except posted papers, which search engines should find.
+  - scope:
+      path: "assets/papers"
+    values:
+      sitemap: true
 
 # Template leftovers from the Minima theme that shouldn't be published.
 # (Listing exclude replaces Jekyll's defaults, so the defaults are repeated here.)

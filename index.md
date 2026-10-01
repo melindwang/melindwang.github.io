@@ -17,11 +17,16 @@ I like to think about emergence, dynamical systems theory, and economic policy f
 
 I write on [Substack](https://melindwang.substack.com/){: target="_blank" rel="noopener"}.
 
-<span id="email"></span>
+<p id="contact">You can reach me by <a href="#" id="email-link">email</a> (click to show).</p>
 <script>
-  const p = ['com', 'gmail', 'melindwang'].reverse();
-  document.getElementById('email').innerHTML =
-    `You can reach me at <a href="mailto:${p[0]}@${p[1]}.${p[2]}">${p[0]}@${p[1]}.${p[2]}</a>.`;
+  // The address is never in the page as text: it's rebuilt from reversed character codes,
+  // and only after a real click, so scrapers reading or even rendering the page don't see it.
+  document.getElementById('email-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    const a = String.fromCharCode(...[109,111,99,46,108,105,97,109,103,64,103,110,97,119,100,110,105,108,101,109].reverse());
+    document.getElementById('contact').innerHTML =
+      'You can reach me at <a href="mailto:' + a + '">' + a + '</a>.';
+  });
 </script>
 
 </div>
