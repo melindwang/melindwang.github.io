@@ -17,7 +17,7 @@ I like to think about emergence, dynamical systems theory, and economic policy f
 
 I write on [Substack](https://melindwang.substack.com/){: target="_blank" rel="noopener"}.
 
-<p id="contact">You can reach me by <a href="#" id="email-link">email</a> (click to show).</p>
+<p id="contact">You can reach me by <a href="#" id="email-link">email</a>.</p>
 <script>
   // The address is never in the page as text: it's rebuilt from reversed character codes,
   // and only after a real click, so scrapers reading or even rendering the page don't see it.

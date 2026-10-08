@@ -3,10 +3,9 @@
 # and fill in the title.
 # To add a paper hosted on this site: put the PDF in assets/papers/ and set pdf to its path instead.
 # note, authors and date are optional.
-# Listed, but the PDF is down while the next draft is in progress, so the link 404s for now.
-# The resume and CV use the same link. To make it live again, save the new draft at
-# assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf (exactly that name).
-- title: "Learning under Endogenous Feedback: Finite-Response Gradients and Joint Stability"
+# The resume and CV link to this exact file path (it predates the paper's retitling).
+# To post a new draft, overwrite assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf.
+- title: "More Foresight, Induced Collapse: Response Horizons in Self-Consuming Model Optimization"
   pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
   note: "(Working Paper Draft)"
   authors: ""
