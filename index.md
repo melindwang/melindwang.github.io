@@ -11,21 +11,22 @@ body_class: about
 
 <div class="about-text" markdown="1">
 
-Hi, I'm Mel.
+hey! I go by mel.
 
-I like to think about emergence, dynamical systems theory, and economic policy for AI. I'm originally from Indiana — now based in New York City.
+I'm currently thinking about the economics of AI, emergence, and feedback processes in dynamic systems. I’m originally from Indiana — now based in New York City.
 
-I write on [Substack](https://melindwang.substack.com/){: target="_blank" rel="noopener"}.
-
-<p id="contact">You can reach me by <a href="#" id="email-link">email</a>.</p>
+<p id="contact">please reach out! I love receiving <a href="#" id="email-link">emails</a>. I also write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
 <script>
   // The address is never in the page as text: it's rebuilt from reversed character codes,
   // and only after a real click, so scrapers reading or even rendering the page don't see it.
+  // The first click shows the address after "emails"; after that the link opens a new email.
   document.getElementById('email-link').addEventListener('click', function (e) {
-    e.preventDefault();
     const a = String.fromCharCode(...[109,111,99,46,108,105,97,109,103,64,103,110,97,119,100,110,105,108,101,109].reverse());
-    document.getElementById('contact').innerHTML =
-      'You can reach me at <a href="mailto:' + a + '">' + a + '</a>.';
+    if (this.dataset.shown) return;
+    e.preventDefault();
+    this.href = 'mailto:' + a;
+    this.dataset.shown = '1';
+    this.insertAdjacentHTML('afterend', ' (<a href="mailto:' + a + '">' + a + '</a>)');
   });
 </script>
 
