@@ -13,7 +13,7 @@ body_class: about
 
 hey! I go by mel.
 
-I'm currently thinking about the economics of AI, emergence, and feedback processes in dynamic systems. I’m originally from Indiana — now based in New York City.
+I'm currently thinking about the macroeconomics of transformative AI, and feedback processes in dynamic systems.
 
 <p id="contact">please reach out! I love receiving <a href="#" id="email-link">emails</a>. I also write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
 <script>
