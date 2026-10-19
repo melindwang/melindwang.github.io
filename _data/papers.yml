@@ -3,13 +3,19 @@
 # and fill in the title.
 # To add a paper hosted on this site: put the PDF in assets/papers/ and set pdf to its path instead.
 # note, authors and date are optional.
-# The resume and CV link to this exact file path (it predates the paper's retitling).
-# To post a new draft, overwrite assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf.
-- title: "More Foresight, Induced Collapse: Response Horizons in Self-Consuming Model Optimization"
-  pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
+- title: "Delegating Decisions to AI and Macroeconomic Stability"
+  pdf: /assets/papers/Wang_Delegating_Decisions_to_AI.pdf
   note: "(Working Paper Draft)"
   authors: ""
   date: ""
+
+# Unlisted, but the PDF stays up so links in resumes already sent keep working.
+# (File name predates the paper's retitling.) To list it again, remove the leading "# ".
+# - title: "More Foresight, Induced Collapse: Response Horizons in Self-Consuming Model Optimization"
+#   pdf: /assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf
+#   note: "(Working Paper Draft)"
+#   authors: ""
+#   date: ""
 
 - title: "A Coupled Framework for Macroeconomic Dynamics: Application to Adaptive Learning"
   ssrn_id: 7175898
