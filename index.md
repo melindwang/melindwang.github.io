@@ -11,11 +11,13 @@ body_class: about
 
 <div class="about-text" markdown="1">
 
-hey! I go by mel.
+Hey! You can call me Mel.
 
-I'm currently thinking about the macroeconomics of transformative AI, and feedback processes in dynamic systems.
+I’m currently thinking about the macroeconomics of transformative AI, feedback processes in dynamic systems, and AI alignment.
 
-<p id="contact">please reach out! I love receiving <a href="#" id="email-link">emails</a>. I also write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
+Previously, I worked in the Division of Financial Stability at the Federal Reserve Board on evaluating and monitoring systemic risks to the economy. I built a <a href="/monitor/">Financial Transition Monitor</a> to follow the financing behind AI investment and track observable warning signs of impending crises.
+
+<p id="contact">Please reach out! I love receiving <a href="#" id="email-link">emails</a>. I also write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
 <script>
   // The address is never in the page as text: it's rebuilt from reversed character codes,
   // and only after a real click, so scrapers reading or even rendering the page don't see it.
