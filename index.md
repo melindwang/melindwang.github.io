@@ -4,11 +4,19 @@ permalink: /
 body_class: home
 ---
 
+<div class="strip">
+  <img src="/assets/images/portrait.jpg" alt="Melinda Wang" width="871" height="871">
+  <img src="/assets/images/headshot.jpg" alt="" width="797" height="797">
+  <img src="/assets/images/profile-3.jpg" alt="" width="1113" height="1113">
+</div>
+
 <div class="intro">
 
 <p>Hi, I’m Mel.</p>
 
 <p>I’m interested in the macroeconomics of transformative AI, feedback processes in dynamic systems, and AI alignment. I built a <a href="/monitor/">Financial Transition Monitor</a> to follow the financing behind AI investment and track observable warning signs of impending crises.</p>
+
+<p>Previously, I was an economics PhD student at NYU. Before that, I worked in the Division of Financial Stability at the Federal Reserve Board evaluating and monitoring systemic risks to the economy. I grew up in Indiana and studied economics and mathematics at USC.</p>
 
 <p id="contact">Please reach out! I love receiving <a href="#" id="email-link">emails</a>. I also write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
 <script>

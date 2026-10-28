@@ -34,7 +34,6 @@ header_pages:
 # Tabs in the top-right of the "mel" layout, in order.
 # A tab with children is a dropdown (Work). The name top-left links to the home page.
 tabs:
-  - { title: About,   url: /about/ }
   - title: Work
     children:
       - { title: Financial Transition Monitor, url: /monitor/ }

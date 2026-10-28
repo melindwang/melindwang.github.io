@@ -6,8 +6,6 @@
   --ink: #111;
   --muted: #6b6b6b;
   --rule: #e4e4e4;
-  --frame: #fff;
-  --frame-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 6px 18px rgba(0, 0, 0, 0.06);
   --serif: "Crimson Pro", "Minion Pro", Georgia, "Times New Roman", serif;
   color-scheme: light;
 }
@@ -18,8 +16,6 @@
   --ink: #e9e6e1;
   --muted: #a19d97;
   --rule: #2e2e2e;
-  --frame: #232323;
-  --frame-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 22px rgba(0, 0, 0, 0.45);
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -28,8 +24,6 @@
     --ink: #e9e6e1;
     --muted: #a19d97;
     --rule: #2e2e2e;
-    --frame: #232323;
-    --frame-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 22px rgba(0, 0, 0, 0.45);
     color-scheme: dark;
   }
 }
@@ -63,31 +57,20 @@ main {
 .home .intro p { margin: 0 0 1.1em; }
 .home .intro a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
-/* About: two photos side by side, then the text */
-.photos {
+/* Home: three photos joined into one strip, with a thin border in the text color (black, or white in dark mode) */
+.strip {
   display: flex;
-  flex-wrap: wrap;
-  gap: 36px;
-  align-items: flex-start;
-  margin: 0 0 56px;
+  max-width: 720px;
+  margin: 0 0 52px;
+  border: 2px solid var(--ink);
 }
-
-.photo {
-  margin: 0;
-  background: var(--frame);
-  padding: 12px 12px 34px;
-  box-shadow: var(--frame-shadow);
-  transform: rotate(-1.5deg);
-  width: 300px;
-  max-width: calc(50% - 18px);
+.strip img {
+  display: block;
+  width: calc(100% / 3);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
-.photo + .photo { transform: rotate(1.8deg); margin-top: 18px; }
-
-.photo img { display: block; width: 100%; height: auto; }
-
-.about-text { max-width: 620px; }
-.about-text p { margin: 0 0 1em; }
-.about-text a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
 /* Papers */
 .page-title {
@@ -137,8 +120,6 @@ main {
 @media (max-width: 720px) {
   main { padding: 48px 16px 40px; }
   .home .intro { font-size: 20px; }
-  .photos { gap: 18px; margin-bottom: 40px; }
-  .photo { padding: 8px 8px 22px; max-width: calc(50% - 9px); }
-  .photo + .photo { margin-top: 12px; }
+  .strip { margin-bottom: 36px; }
   .site-foot { padding: 20px 16px 32px; }
 }
