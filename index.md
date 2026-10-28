@@ -4,11 +4,7 @@ permalink: /
 body_class: home
 ---
 
-<div class="strip">
-  <img src="/assets/images/portrait.jpg" alt="Melinda Wang" width="871" height="871">
-  <img src="/assets/images/headshot.jpg" alt="" width="797" height="797">
-  <img src="/assets/images/profile-3.jpg" alt="" width="1113" height="1113">
-</div>
+<img class="strip" src="/assets/images/photo-strip.jpg" width="990" height="330" alt="Three black-and-white photos of Melinda Wang">
 
 <div class="intro">
 

@@ -3,13 +3,15 @@
 
     script/publish-monitor PATH/TO/financial-transition-monitor/docs
 
-Copies index.html (the monitor) and note.html (the technical note) into monitor/. Each page is served
+Copies index.html (the monitor), note.html (a redirect to its #note section) and the images the pages use
+(*.jpg, *.png) into monitor/. Each page is served
 as built, with three additions: front matter so Jekyll processes it, this site's header styles and
 theme script in <head> (_includes/monitor-head.html), and the site header at the top of <body>
 (_includes/site-head.html). Everything else is wrapped in {% raw %} so Liquid leaves the page's own
 code untouched. Commit and push monitor/ afterwards.
 """
 import pathlib
+import shutil
 import sys
 
 PAGES = ("index.html", "note.html")
@@ -33,6 +35,9 @@ def main(src: str) -> None:
         page = (pathlib.Path(src) / name).read_text(encoding="utf-8")
         (out / name).write_text(wrap(page), encoding="utf-8")
         print("published", out / name)
+    for img in sorted(pathlib.Path(src).glob("*.jpg")) + sorted(pathlib.Path(src).glob("*.png")):
+        shutil.copyfile(img, out / img.name)
+        print("published", out / img.name)
 
 
 if __name__ == "__main__":

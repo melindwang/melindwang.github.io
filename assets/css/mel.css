@@ -57,19 +57,15 @@ main {
 .home .intro p { margin: 0 0 1.1em; }
 .home .intro a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
-/* Home: three photos joined into one strip, with a thin border in the text color (black, or white in dark mode) */
+/* Home: one photo strip (three photos, no gaps) at a modest size, with a thin border in the text color */
+main.home { padding-top: 56px; }
 .strip {
-  display: flex;
-  max-width: 720px;
-  margin: 0 0 52px;
-  border: 2px solid var(--ink);
-}
-.strip img {
   display: block;
-  width: calc(100% / 3);
+  width: 100%;
+  max-width: 450px;
   height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
+  margin: 0 0 32px;
+  border: 1.5px solid var(--ink);
 }
 
 /* Papers */
@@ -120,6 +116,7 @@ main {
 @media (max-width: 720px) {
   main { padding: 48px 16px 40px; }
   .home .intro { font-size: 20px; }
-  .strip { margin-bottom: 36px; }
+  main.home { padding-top: 36px; }
+  .strip { margin-bottom: 26px; }
   .site-foot { padding: 20px 16px 32px; }
 }

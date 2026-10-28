@@ -15,7 +15,8 @@ layout: null
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" onload="window.__math && window.__math()"></script>
 <style>
-/* Type: two families and one scale. Crimson Pro (the website's serif) for reading, Atkinson Hyperlegible for
+/* Colors match the website's neutrals (light #fafafa, dark #141414), so the site header, the page and the hero agree.
+   Type: two families and one scale. Crimson Pro (the website's serif) for reading, Atkinson Hyperlegible for
    data and controls. Every size on the page is one of --t1 to --t7. */
 :root {
   color-scheme: light;
@@ -28,8 +29,8 @@ layout: null
   --t5: 23px;                           /* lede, h3, verdict */
   --t6: clamp(30px, 3.6vw, 40px);       /* section headings */
   --t7: clamp(42px, 6.2vw, 72px);       /* title, this week's rating */
-  --paper: #EEF2F1; --surface: #FAFCFB; --ink: #0F2730; --ink-2: #44575D; --muted: #66777C;
-  --rule: #D3DCDB; --rule-strong: #AFBEBD;
+  --paper: #fafafa; --surface: #ffffff; --ink: #111111; --ink-2: #474747; --muted: #6b6b6b;
+  --rule: #e2e2e2; --rule-strong: #bdbdbd;
   --s1: #2a78d6; --s1-wash: rgba(42,120,214,0.10); --gray: #8A9A9E;
   --zone: rgba(236,131,90,0.20); --zone-edge: #d5683f; --crit: #c93535;
   --lv0: #eda070; --lv1: #dd7740; --lv2: #bf5523; --lv3: #8f3a14;
@@ -38,8 +39,8 @@ layout: null
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --paper: #0C171B; --surface: #13232A; --ink: #E4ECEC; --ink-2: #AFC0C2; --muted: #8A9DA1;
-    --rule: #22363C; --rule-strong: #3A535A;
+    --paper: #141414; --surface: #1c1c1c; --ink: #e9e6e1; --ink-2: #c2beb8; --muted: #a19d97;
+    --rule: #2e2e2e; --rule-strong: #4a4a4a;
     --s1: #3987e5; --s1-wash: rgba(57,135,229,0.14); --gray: #6F8287;
     --zone: rgba(217,89,38,0.22); --zone-edge: #e07a50; --crit: #e46a6a;
     --lv0: #8a4220; --lv1: #b45a26; --lv2: #d97738; --lv3: #f4a874;
@@ -48,8 +49,8 @@ layout: null
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #0C171B; --surface: #13232A; --ink: #E4ECEC; --ink-2: #AFC0C2; --muted: #8A9DA1;
-  --rule: #22363C; --rule-strong: #3A535A;
+  --paper: #141414; --surface: #1c1c1c; --ink: #e9e6e1; --ink-2: #c2beb8; --muted: #a19d97;
+  --rule: #2e2e2e; --rule-strong: #4a4a4a;
   --s1: #3987e5; --s1-wash: rgba(57,135,229,0.14); --gray: #6F8287;
   --zone: rgba(217,89,38,0.22); --zone-edge: #e07a50; --crit: #e46a6a;
   --lv0: #8a4220; --lv1: #b45a26; --lv2: #d97738; --lv3: #f4a874;
@@ -71,13 +72,11 @@ section[id], .week[id] { scroll-margin-top: 16px; }
 /* Hero: black in both themes */
 .hero { background: #000; color: #f3f3f1; padding: 72px 0; }
 .hero-in { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 56px; align-items: center; }
-.hero .kicker { font-family: var(--sans); font-size: var(--t2); color: #a9a9a6; margin: 0 0 16px; }
 .hero h1 { font-size: var(--t7); line-height: 1.02; letter-spacing: -0.02em; max-width: 13ch; color: #fff; }
 .hero .lede { font-size: var(--t5); line-height: 1.45; color: #d2d2cf; margin: 24px 0 0; max-width: 34em; }
-.hero-img { margin: 0; aspect-ratio: 4 / 3; display: grid; place-items: center; border: 1px solid #2e2e2e;
-  background: linear-gradient(to top right, transparent calc(50% - 0.6px), #2e2e2e, transparent calc(50% + 0.6px)),
-              linear-gradient(to top left, transparent calc(50% - 0.6px), #2e2e2e, transparent calc(50% + 0.6px)), #141414; }
-.hero-img span { font-family: var(--sans); font-size: var(--t1); color: #9a9a97; background: #141414; padding: 2px 10px; }
+.hero-fig { margin: 0; }
+.hero-img { display: block; width: 100%; height: auto; border: 1px solid #2e2e2e; }
+.hero-fig figcaption { font-family: var(--sans); font-size: var(--t1); line-height: 1.45; color: #a3a3a0; margin-top: 10px; }
 
 /* Contents, below the hero */
 .mast { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 6px 28px; padding: 26px 0 0; font-family: var(--sans); font-size: var(--t2); }
@@ -282,12 +281,13 @@ footer { margin-top: 72px; padding: 22px 0 44px; border-top: 1px solid var(--rul
 <section class="hero" aria-labelledby="title">
   <div class="wrap hero-in">
     <div>
-      <p class="kicker">Financial Transition Monitor</p>
       <h1 id="title">Is AI debt building toward a financial crisis?</h1>
       <p class="lede">AI companies are committing enormous sums to data centers and computing infrastructure before we know whether the returns will justify the cost. I built this monitor to follow how that investment is financed and who would absorb the losses if it falls short. I look at how losses in one part of the economy can propagate to the rest of the financial system.</p>
     </div>
-    <!-- Placeholder: once there is a picture, replace this figure with an img element (class hero-img, with alt text). -->
-    <figure class="hero-img" role="img" aria-label="Placeholder image"><span>Placeholder image</span></figure>
+    <figure class="hero-fig">
+      <img class="hero-img" src="arkwright-cotton-mills-by-night.jpg" width="603" height="488" alt="A night painting of Arkwright’s cotton mills at Cromford: rows of lit windows in a valley under a moonlit sky.">
+      <figcaption>Joseph Wright of Derby, <i>Arkwright’s Cotton Mills by Night</i>, about 1782–83. Private collection.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -799,7 +799,7 @@ footer { margin-top: 72px; padding: 22px 0 44px; border-top: 1px solid var(--rul
   </section>
 
   <footer>
-    <span>Melinda L. Wang. Research, October 2026. Built with Claude Code. The model runs in your browser.</span>
+    <span>Melinda L. Wang. Research, October 2026. The model runs in your browser.</span>
     <span>Not investment advice.</span>
   </footer>
 </div>
