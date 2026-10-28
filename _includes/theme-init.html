@@ -1,0 +1,5 @@
+<script>
+  // Light or dark: a choice saved by the header's toggle wins; otherwise the system setting applies (see the CSS).
+  // Runs in <head> so the page never flashes the wrong theme. The monitor pages read the same attribute.
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>

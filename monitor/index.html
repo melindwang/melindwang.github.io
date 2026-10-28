@@ -1,4 +1,7 @@
-<!doctype html>
+---
+layout: null
+---
+{% raw %}<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -237,8 +240,8 @@ footer { margin-top: 70px; padding: 22px 0 44px; border-top: 1px solid var(--rul
   section.block { padding-top: 56px; }
 }
 </style>
-</head>
-<body>
+{% endraw %}{% include monitor-head.html %}{% raw %}</head>
+<body>{% endraw %}{% include site-head.html %}{% raw %}
 <div class="wrap">
   <header class="mast">
     <b>Financial Transition Monitor</b>
@@ -944,3 +947,4 @@ syncControls(); drawScale(); drawStrip(); drawZone(); runLab();
 </script>
 </body>
 </html>
+{% endraw %}

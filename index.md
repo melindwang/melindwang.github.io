@@ -1,21 +1,14 @@
 ---
 layout: mel
-title: About
 permalink: /
-body_class: about
+body_class: home
 ---
 
-<figure class="photo">
-  <img src="/assets/images/headshot.jpg" alt="Melinda Wang" width="797" height="797">
-</figure>
+<div class="intro">
 
-<div class="about-text" markdown="1">
+<p>Hi, I’m Mel.</p>
 
-Hey! You can call me Mel.
-
-I’m currently thinking about the macroeconomics of transformative AI, feedback processes in dynamic systems, and AI alignment.
-
-Previously, I worked in the Division of Financial Stability at the Federal Reserve Board on evaluating and monitoring systemic risks to the economy. I built a <a href="/monitor/">Financial Transition Monitor</a> to follow the financing behind AI investment and track observable warning signs of impending crises.
+<p>I’m interested in the macroeconomics of transformative AI, feedback processes in dynamic systems, and AI alignment. I built a <a href="/monitor/">Financial Transition Monitor</a> to follow the financing behind AI investment and track observable warning signs of impending crises.</p>
 
 <p id="contact">Please reach out! I love receiving <a href="#" id="email-link">emails</a>. I also write on <a href="https://melindwang.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
 <script>

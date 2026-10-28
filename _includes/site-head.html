@@ -1,0 +1,51 @@
+{%- comment -%}
+  The site header: name (home), tabs from _config.yml (a tab with children becomes a dropdown),
+  and the light/dark toggle. Used by the "mel" layout and, through script/publish-monitor, by the
+  monitor's pages, so its styles live in assets/css/site-head.css and are scoped to .site-head.
+{%- endcomment -%}
+<header class="site-head">
+  <a class="name" href="{{ '/' | relative_url }}">Melinda Wang</a>
+  <nav class="tabs" aria-label="Site">
+    {%- for tab in site.tabs -%}
+      {%- if tab.children -%}
+        {%- assign in_tab = false -%}
+        {%- for child in tab.children -%}{%- if page.url contains child.url -%}{%- assign in_tab = true -%}{%- endif -%}{%- endfor -%}
+        <details class="menu">
+          <summary{% if in_tab %} class="active"{% endif %}>{{ tab.title }}</summary>
+          <div class="menu-list">
+            {%- for child in tab.children -%}
+              <a href="{{ child.url | relative_url }}"{% if page.url contains child.url %} aria-current="page"{% endif %}>{{ child.title }}</a>
+            {%- endfor -%}
+          </div>
+        </details>
+      {%- elsif tab.external -%}
+        <a href="{{ tab.url }}" target="_blank" rel="noopener">{{ tab.title }}</a>
+      {%- else -%}
+        <a href="{{ tab.url | relative_url }}"{% if page.url == tab.url %} class="active" aria-current="page"{% endif %}>{{ tab.title }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+    <button class="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Light or dark mode">
+      <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </nav>
+</header>
+<script>
+  (function () {
+    var root = document.documentElement, head = document.currentScript.previousElementSibling;
+    var dark = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : { matches: false };
+    head.querySelector('.theme-toggle').addEventListener('click', function () {
+      var now = root.getAttribute('data-theme') || (dark.matches ? 'dark' : 'light');
+      var next = now === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    // Close the Work menu when clicking elsewhere or pressing Escape.
+    document.addEventListener('click', function (e) {
+      head.querySelectorAll('details[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') head.querySelectorAll('details[open]').forEach(function (d) { d.removeAttribute('open'); });
+    });
+  })();
+</script>

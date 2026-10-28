@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+"""Publish the Financial Transition Monitor's built pages under /monitor/, inside this site's header.
+
+    script/publish-monitor PATH/TO/financial-transition-monitor/docs
+
+Copies index.html (the monitor) and note.html (the technical note) into monitor/. Each page is served
+as built, with three additions: front matter so Jekyll processes it, this site's header styles and
+theme script in <head> (_includes/monitor-head.html), and the site header at the top of <body>
+(_includes/site-head.html). Everything else is wrapped in {% raw %} so Liquid leaves the page's own
+code untouched. Commit and push monitor/ afterwards.
+"""
+import pathlib
+import sys
+
+PAGES = ("index.html", "note.html")
+OPEN, CLOSE = "{% raw %}", "{% endraw %}"
+
+
+def wrap(html: str) -> str:
+    if CLOSE in html:
+        raise SystemExit("page contains {% endraw %}; it can't be wrapped safely")
+    head_end = html.index("</head>")
+    body_open = html.index(">", html.index("<body")) + 1
+    return ("---\nlayout: null\n---\n" + OPEN + html[:head_end]
+            + CLOSE + "{% include monitor-head.html %}" + OPEN + html[head_end:body_open]
+            + CLOSE + "{% include site-head.html %}" + OPEN + html[body_open:] + CLOSE + "\n")
+
+
+def main(src: str) -> None:
+    out = pathlib.Path(__file__).resolve().parents[1] / "monitor"
+    out.mkdir(exist_ok=True)
+    for name in PAGES:
+        page = (pathlib.Path(src) / name).read_text(encoding="utf-8")
+        (out / name).write_text(wrap(page), encoding="utf-8")
+        print("published", out / name)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        raise SystemExit(__doc__)
+    main(sys.argv[1])

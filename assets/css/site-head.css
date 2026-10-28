@@ -1,0 +1,141 @@
+/* The site header (name, tabs, Work dropdown, light/dark toggle).
+   Shared by the "mel" layout and the monitor's pages, so everything is scoped to .site-head and its
+   colors are its own variables: they must not override the monitor's :root variables. */
+
+.site-head {
+  --sh-ink: #111;
+  --sh-muted: #6b6b6b;
+  --sh-rule: #e4e4e4;
+  --sh-panel: #fafafa;
+  --sh-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 40px 0;
+  font-family: "Crimson Pro", "Minion Pro", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--sh-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+:root[data-theme="dark"] .site-head {
+  --sh-ink: #e9e6e1;
+  --sh-muted: #a19d97;
+  --sh-rule: #2e2e2e;
+  --sh-panel: #1c1c1c;
+  --sh-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .site-head {
+    --sh-ink: #e9e6e1;
+    --sh-muted: #a19d97;
+    --sh-rule: #2e2e2e;
+    --sh-panel: #1c1c1c;
+    --sh-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.site-head * { box-sizing: border-box; }
+
+.site-head .name {
+  font-style: italic;
+  font-size: 30px;
+  letter-spacing: -0.01em;
+  color: var(--sh-ink);
+  text-decoration: none;
+}
+
+.site-head .tabs { display: flex; align-items: baseline; gap: 22px; }
+
+.site-head .tabs > a,
+.site-head .menu > summary {
+  font-size: 18px;
+  color: var(--sh-ink);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.site-head .tabs > a:hover,
+.site-head .tabs > a.active,
+.site-head .menu > summary:hover,
+.site-head .menu > summary.active { border-bottom-color: var(--sh-ink); }
+
+/* Work: a dropdown built on <details>, so it opens by click or keyboard without scripts */
+.site-head .menu { position: relative; }
+.site-head .menu > summary { list-style: none; }
+.site-head .menu > summary::-webkit-details-marker { display: none; }
+.site-head .menu > summary::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 3px 7px;
+  border-right: 1.3px solid currentColor;
+  border-bottom: 1.3px solid currentColor;
+  transform: rotate(45deg);
+}
+.site-head .menu[open] > summary::after { transform: rotate(-135deg); margin-bottom: -1px; }
+
+.site-head .menu-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 50;
+  min-width: 250px;
+  padding: 6px 0;
+  background: var(--sh-panel);
+  border: 1px solid var(--sh-rule);
+  border-radius: 8px;
+  box-shadow: var(--sh-shadow);
+}
+.site-head .menu-list a {
+  display: block;
+  padding: 7px 18px;
+  font-size: 18px;
+  color: var(--sh-ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-head .menu-list a:hover,
+.site-head .menu-list a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+
+/* Light/dark toggle */
+.site-head .theme-toggle {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 0 -6px 0 -4px;
+  padding: 0;
+  color: var(--sh-muted);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.site-head .theme-toggle:hover { color: var(--sh-ink); }
+.site-head .theme-toggle:focus-visible { outline: 1px solid var(--sh-ink); outline-offset: 2px; }
+.site-head .i-sun { display: none; }
+:root[data-theme="dark"] .site-head .i-moon { display: none; }
+:root[data-theme="dark"] .site-head .i-sun { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .site-head .i-moon { display: none; }
+  :root:not([data-theme="light"]) .site-head .i-sun { display: block; }
+}
+
+@media (max-width: 720px) {
+  .site-head { padding: 24px 16px 0; }
+  .site-head .name { font-size: 26px; }
+  .site-head .tabs { gap: 18px; }
+  .site-head .menu-list { right: auto; left: -18px; min-width: 240px; }
+}

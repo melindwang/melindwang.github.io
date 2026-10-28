@@ -1,11 +1,37 @@
-/* Site styles for the "mel" layout: quiet serif type, italic name top-left, tabs top-right. */
+/* Site styles for the "mel" layout: quiet serif type, italic name top-left, tabs top-right.
+   The header (name, tabs, Work menu, light/dark toggle) is styled in site-head.css. */
 
 :root {
   --bg: #fafafa;
   --ink: #111;
   --muted: #6b6b6b;
   --rule: #e4e4e4;
+  --frame: #fff;
+  --frame-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 6px 18px rgba(0, 0, 0, 0.06);
   --serif: "Crimson Pro", "Minion Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+
+/* Dark mode: the header's toggle sets data-theme; without a saved choice, the system setting decides. */
+:root[data-theme="dark"] {
+  --bg: #141414;
+  --ink: #e9e6e1;
+  --muted: #a19d97;
+  --rule: #2e2e2e;
+  --frame: #232323;
+  --frame-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 22px rgba(0, 0, 0, 0.45);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141414;
+    --ink: #e9e6e1;
+    --muted: #a19d97;
+    --rule: #2e2e2e;
+    --frame: #232323;
+    --frame-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 22px rgba(0, 0, 0, 0.45);
+    color-scheme: dark;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -25,37 +51,6 @@ body {
 
 a { color: inherit; }
 
-/* Header */
-.site-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px 24px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 36px 40px 0;
-}
-
-.name {
-  font-style: italic;
-  font-size: 30px;
-  letter-spacing: -0.01em;
-  text-decoration: none;
-}
-
-.tabs { display: flex; gap: 22px; }
-
-.tabs a {
-  font-size: 18px;
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
-}
-
-.tabs a:hover,
-.tabs a.active { border-bottom-color: var(--ink); }
-
 /* Page body */
 main {
   max-width: 1100px;
@@ -63,27 +58,34 @@ main {
   padding: 90px 40px 60px;
 }
 
-/* About (home) */
-.about {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 56px;
-  align-items: center;
+/* Home */
+.home .intro { max-width: 620px; font-size: 21px; }
+.home .intro p { margin: 0 0 1.1em; }
+.home .intro a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* About: two photos side by side, then the text */
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  align-items: flex-start;
+  margin: 0 0 56px;
 }
 
 .photo {
-  justify-self: center;
-  background: #fff;
+  margin: 0;
+  background: var(--frame);
   padding: 12px 12px 34px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--frame-shadow);
   transform: rotate(-1.5deg);
-  max-width: 360px;
-  width: 100%;
+  width: 300px;
+  max-width: calc(50% - 18px);
 }
+.photo + .photo { transform: rotate(1.8deg); margin-top: 18px; }
 
 .photo img { display: block; width: 100%; height: auto; }
 
-.about-text { max-width: 440px; }
+.about-text { max-width: 620px; }
 .about-text p { margin: 0 0 1em; }
 .about-text a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
@@ -115,6 +117,8 @@ main {
 
 .pub-links { font-size: 16px; color: var(--muted); }
 
+.pub-note { color: var(--muted); font-style: italic; font-size: 18px; white-space: nowrap; }
+
 /* Footer */
 .site-foot {
   max-width: 1100px;
@@ -131,12 +135,10 @@ main {
 
 /* Phones */
 @media (max-width: 720px) {
-  .site-head { padding: 24px 16px 0; }
-  .name { font-size: 26px; }
   main { padding: 48px 16px 40px; }
-  .about { grid-template-columns: 1fr; gap: 36px; }
-  .photo { max-width: 280px; }
+  .home .intro { font-size: 20px; }
+  .photos { gap: 18px; margin-bottom: 40px; }
+  .photo { padding: 8px 8px 22px; max-width: calc(50% - 9px); }
+  .photo + .photo { margin-top: 12px; }
   .site-foot { padding: 20px 16px 32px; }
 }
-
-.pub-note { color: var(--muted); font-style: italic; font-size: 18px; white-space: nowrap; }

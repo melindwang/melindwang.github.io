@@ -1,16 +1,23 @@
 ---
-layout: null
+layout: mel
+title: About
 permalink: /about/
-sitemap: false
+body_class: about-page
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Redirecting…</title>
-  <link rel="canonical" href="{{ '/' | absolute_url }}">
-  <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
-  <meta name="robots" content="noindex">
-</head>
-<body><a href="{{ '/' | relative_url }}">Continue to the homepage</a></body>
-</html>
+
+<div class="photos">
+  <figure class="photo">
+    <img src="/assets/images/headshot.jpg" alt="Melinda Wang" width="797" height="797">
+  </figure>
+  <figure class="photo">
+    <img src="/assets/images/portrait.jpg" alt="Melinda Wang, in a black-and-white portrait" width="871" height="871" loading="lazy">
+  </figure>
+</div>
+
+<div class="about-text" markdown="1">
+
+Previously, I was an economics PhD at NYU. Before that, I worked in the Division of Financial Stability at the Federal Reserve Board on evaluating and monitoring systemic risks to the economy.
+
+I grew up in Indiana and studied economics and mathematics at USC.
+
+</div>
