@@ -4,7 +4,7 @@
   monitor's pages, so its styles live in assets/css/site-head.css and are scoped to .site-head.
 {%- endcomment -%}
 <header class="site-head">
-  <a class="name" href="{{ '/' | relative_url }}">Melinda Wang</a>
+  <a class="name" href="{{ '/' | relative_url }}"><span class="name-mark" aria-hidden="true"></span>Melinda Wang</a>
   <nav class="tabs" aria-label="Site">
     {%- for tab in site.tabs -%}
       {%- if tab.children -%}

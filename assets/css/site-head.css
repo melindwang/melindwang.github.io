@@ -51,6 +51,19 @@
   text-decoration: none;
 }
 
+/* Flower mark before the name: a silhouette used as a mask, filled with the text color,
+   so it is dark in light mode and light in dark mode. */
+.site-head .name-mark {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.28em;
+  vertical-align: -0.2em;
+  background-color: var(--sh-ink);
+  -webkit-mask: url("/assets/images/flower-mark.png") center / contain no-repeat;
+          mask: url("/assets/images/flower-mark.png") center / contain no-repeat;
+}
+
 .site-head .tabs { display: flex; align-items: baseline; gap: 22px; }
 
 .site-head .tabs > a,
