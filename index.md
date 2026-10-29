@@ -4,7 +4,9 @@ permalink: /
 body_class: home
 ---
 
-<img class="strip" src="/assets/images/photo-strip.jpg" width="1200" height="600" alt="Two black-and-white photos of Melinda Wang">
+<div class="home-row">
+
+<img class="strip" src="/assets/images/photo-stack.jpg" width="600" height="1200" alt="Two black-and-white photos of Melinda Wang">
 
 <div class="intro">
 
@@ -28,6 +30,8 @@ body_class: home
     this.insertAdjacentHTML('afterend', ' (<a href="mailto:' + a + '">' + a + '</a>)');
   });
 </script>
+
+</div>
 
 </div>
 

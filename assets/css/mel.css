@@ -57,16 +57,21 @@ main {
 .home .intro p { margin: 0 0 1.1em; }
 .home .intro a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
-/* Home: one photo strip (three photos, no gaps) at a modest size, with a thin border in the text color */
+/* Home: two photos stacked in one tall image on the left, with a thin border in the text color; the intro sits to its right */
 main.home { padding-top: 56px; }
+.home-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
 .strip {
   display: block;
-  width: 100%;
-  max-width: 450px;
+  flex: 0 0 auto;
+  width: 260px;
   height: auto;
-  margin: 0 0 32px;
   border: 1.5px solid var(--ink);
 }
+.home .intro p:first-child { margin-top: -0.3em; }
 
 /* Papers */
 .page-title {
@@ -117,6 +122,7 @@ main.home { padding-top: 56px; }
   main { padding: 48px 16px 40px; }
   .home .intro { font-size: 20px; }
   main.home { padding-top: 36px; }
-  .strip { margin-bottom: 26px; }
+  .home-row { flex-direction: column; gap: 26px; }
+  .strip { width: 200px; }
   .site-foot { padding: 20px 16px 32px; }
 }
