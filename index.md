@@ -4,7 +4,7 @@ permalink: /
 body_class: home
 ---
 
-<img class="strip" src="/assets/images/photo-strip.jpg" width="990" height="330" alt="Three black-and-white photos of Melinda Wang">
+<img class="strip" src="/assets/images/photo-strip.jpg" width="1200" height="600" alt="Two black-and-white photos of Melinda Wang">
 
 <div class="intro">
 
