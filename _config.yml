@@ -5,9 +5,21 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >-
-  Melinda (Mel) Wang. I like to think about emergence, dynamical systems theory,
-  and economic policy for AI.
+  Melinda (Mel) Wang, economist in New York City. Research on the macroeconomics
+  of transformative AI and feedback processes in dynamic systems.
 url: https://melindwang.github.io
+
+# Tells search engines that these profiles belong to the same person as this site.
+social:
+  name: Melinda Wang
+  links:
+    - https://github.com/melindwang
+    - https://www.linkedin.com/in/melindwang
+    - https://melindwang.substack.com/
+
+# Google Search Console ownership check: paste the code from the HTML tag method here.
+# webmaster_verifications:
+#   google: PASTE_CODE_HERE
 
 # Build settings
 
@@ -94,6 +106,11 @@ defaults:
       path: "assets/papers"
     values:
       sitemap: true
+  # Unlisted paper: the file stays up, but search engines aren't pointed at it.
+  - scope:
+      path: "assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf"
+    values:
+      sitemap: false
 
 # Template leftovers from the Minima theme that shouldn't be published.
 # (Listing exclude replaces Jekyll's defaults, so the defaults are repeated here.)
