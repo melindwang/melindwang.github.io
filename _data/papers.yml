@@ -2,10 +2,18 @@
 # To add an SSRN paper: copy an entry, set ssrn_id (the number after abstract_id= in the SSRN URL),
 # and fill in the title.
 # To add a paper hosted on this site: put the PDF in assets/papers/ and set pdf to its path instead.
+# For a paper with no draft yet: make a page under papers/ and set page to its permalink.
 # note, authors and date are optional.
 - title: "Delegating Decisions to AI and Macroeconomic Stability"
   pdf: /assets/papers/Wang_Delegating_Decisions_to_AI.pdf
   note: "(Working Paper Draft)"
+  authors: ""
+  date: ""
+
+# Placeholder until a draft is ready; the resume links to this page.
+- title: "Macroeconomic Consequences of Implementation Lags under RSI"
+  page: /papers/implementation-lags-rsi/
+  note: "(Work in Progress)"
   authors: ""
   date: ""
 

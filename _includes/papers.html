@@ -1,10 +1,14 @@
 {%- comment -%}
   Renders the list in _data/papers.yml. Each title links to the paper's SSRN page,
-  or to a PDF hosted on this site when the entry has a pdf path instead of an ssrn_id.
+  or to a PDF hosted on this site when the entry has a pdf path instead of an ssrn_id,
+  or to a page on this site (no [link] line) when the entry has a page path.
 {%- endcomment -%}
 <div class="publications">
 {%- for paper in site.data.papers -%}
-  {%- if paper.pdf -%}
+  {%- if paper.page -%}
+    {%- assign paper_url = paper.page | relative_url -%}
+    {%- assign link_label = "" -%}
+  {%- elsif paper.pdf -%}
     {%- assign paper_url = paper.pdf | relative_url -%}
     {%- assign link_label = "PDF" -%}
   {%- else -%}
@@ -13,7 +17,7 @@
   {%- endif -%}
   <div class="pub-entry">
     <div class="pub-title">
-      <a href="{{ paper_url }}" target="_blank" rel="noopener">{% if paper.title and paper.title != "" %}{{ paper.title }}{% else %}SSRN Working Paper {{ paper.ssrn_id }}{% endif %}</a>
+      <a href="{{ paper_url }}"{% unless paper.page %} target="_blank" rel="noopener"{% endunless %}>{% if paper.title and paper.title != "" %}{{ paper.title }}{% else %}SSRN Working Paper {{ paper.ssrn_id }}{% endif %}</a>
       {%- if paper.note and paper.note != "" %} <span class="pub-note">{{ paper.note }}</span>{% endif %}
     </div>
     {%- if paper.authors and paper.authors != "" %}
@@ -22,7 +26,9 @@
     {%- if paper.date and paper.date != "" %}
     <div class="pub-details">{{ paper.date }}</div>
     {%- endif %}
+    {%- if link_label != "" %}
     <div class="pub-links">[<a href="{{ paper_url }}" target="_blank" rel="noopener">{{ link_label }}</a>]</div>
+    {%- endif %}
   </div>
 {%- endfor -%}
 </div>
