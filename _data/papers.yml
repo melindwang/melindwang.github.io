@@ -10,10 +10,10 @@
   authors: ""
   date: ""
 
-# Placeholder until a draft is ready; the resume links to this page.
+# The resume links to /papers/implementation-lags-rsi/, which now points to this PDF.
 - title: "Macroeconomic Consequences of Implementation Lags under RSI"
-  page: /papers/implementation-lags-rsi/
-  note: "(Work in Progress)"
+  pdf: /assets/papers/Wang_Implementation_Lags_under_RSI.pdf
+  note: "(Working Paper Draft)"
   authors: ""
   date: ""
 
