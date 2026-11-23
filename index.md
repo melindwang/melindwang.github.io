@@ -6,7 +6,7 @@ body_class: home
 
 <div class="home-row">
 
-<img class="strip" src="/assets/images/photo-stack.jpg" width="600" height="1200" alt="Two black-and-white photos of Melinda Wang">
+<img class="strip" src="/assets/images/headshot.jpg" width="797" height="797" alt="Black-and-white photo of Melinda Wang">
 
 <div class="intro">
 

@@ -57,7 +57,7 @@ main {
 .home .intro p { margin: 0 0 1.1em; }
 .home .intro a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
-/* Home: two photos stacked in one tall image on the left, with a thin border in the text color; the intro sits to its right */
+/* Home: one photo on the left, with a thin border in the text color; the intro sits to its right */
 main.home { padding-top: 56px; }
 .home-row {
   display: flex;
