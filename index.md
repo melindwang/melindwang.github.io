@@ -12,7 +12,7 @@ body_class: home
 
 <p>Hi, I’m Mel.</p>
 
-<p>I’m interested in the macroeconomics of transformative AI, feedback processes in dynamic systems, and AI alignment. I built a <a href="/monitor/">Financial Transition Monitor</a> to follow the financing behind AI investment and track observable warning signs of impending crises.</p>
+<p>I’m interested in the macroeconomics of transformative AI, feedback processes in dynamic systems, and AI alignment.</p>
 
 <p>Previously, I was an economics PhD student at NYU. Before that, I worked in the Division of Financial Stability at the Federal Reserve Board evaluating and monitoring systemic risks to the economy. I grew up in Indiana and studied economics and mathematics at USC.</p>
 
