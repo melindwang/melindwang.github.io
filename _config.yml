@@ -111,6 +111,11 @@ defaults:
       path: "assets/papers/Wang_Learning_under_Endogenous_Feedback.pdf"
     values:
       sitemap: false
+  # Linked from the CV only; not listed on the Papers page.
+  - scope:
+      path: "assets/papers/Wang_Rural_Revitalization.pdf"
+    values:
+      sitemap: false
 
 # Template leftovers from the Minima theme that shouldn't be published.
 # (Listing exclude replaces Jekyll's defaults, so the defaults are repeated here.)
